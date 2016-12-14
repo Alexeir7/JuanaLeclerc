@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <img src="imagenes/logo_juana_leclerc.png" alt="logo juana leclerc" id="logo">
+        <h1>Instituto Psicopedagógico</h1>
+        <h2>"JUANA LECLERC"</h2>
+        <input type="checkbox" id="menu-bar">
+        <label class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+          <ul>
+            <li> <a href="index.html">Inicio</a></li>
+            <li><a href="quienesSomos.html">Quienes somos</a></li>
+            <li> <a href="#">Servicios</a>
+              <ul class="desplegable">
+                <li><a href="presenciales.html">Presenciales</a></li>
+                <li><a href="comunitarios.html">Comunitarios</a></li>
+              </ul>
+            </li>
+            <li> <a href="#">Programas</a>
+              <ul class="desplegable">
+                <li><a href="voluntariados.html">Voluntariados</a></li>
+                <li><a href="practicantes.html">Practicantes</a></li>
+                <li><a href="becas.html">Becas</a></li>
+                <li><a href="padrinazgos.html">Padrinazgos</a></li>
+              </ul>
+            </li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li> <a href="acercaDe.html">Acerca de</a></li>
+            <li> <a href="donaciones.html">Donaciones</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="primero articulo">
+      <form action="formulario.html" method="post" id="formulario1">
+        <label for="tipoPrograma">Tipo de Programa:</label><br>
+        <select name="tipoPrograma">
+          <option value="voluntariado">Voluntariado</option>
+          <option value="practicante">Practicante</option>
+          <option value="beca">Beca</option>
+          <option value="padrinazgo">padrinazgo</option>
+        </select><br>
+        <label for="nombre">Nombre(s):</label><br>
+        <input type="text" name="nombre" placeholder="Nombre" id="nombre"><br>
+        <label for="apellido">Apellido(s):</label><br>
+        <input type="text" name="apellido" placeholder="Apellido" id="apellido"><br>
+        <label for="genero">Genero:</label><br>
+        <input type="radio" name="genero" id="generom" value="M"/>
+        <b>Masculino</b>
+        <input type="radio" name="genero" id="generof" value="F"/>
+        <b>Femenino</b><br>
+        <label for="domicilio">Domicilio:</label><br>
+        <input type="text" name="domicilio" placeholder="Domicilio" id="domicilio"><br>
+        <label for="telefono">Numero de telefono:</label><br>
+        <input type="tel" name="telefono"><br>
+        <label for="email">E-mail:</label><br>
+        <input type="email" name="email" id="email"><br>
+        <input type="submit" value="Enviar" name="btnEnviar" id="btnEnviar">
+        <input type="submit" value="Eliminar" name="btnEliminar" id="btnEliminar">
+      </form>
+    </div>
+    <footer>
+      <div class="contenedor" >
+        <p><b>Contactanos</b></p>
+        <p class="icon-location">Colonia los Robles,final de la calle principal, contiguo a escuela pública los Robles</p>
+        <p class="icon-phone-squared">2233-3120</p>
+          <div class="Sociales">
+          <a class="icon-facebook-official" href="https://es-la.facebook.com/juanaleclerc/">/juanaleclerc</a><br/>
+          </div>
+          <p class="copy">Derechos Reservados &copy 2016</p>
+      </div>
+    </footer>
+    <script src="js/formulario.js"></script>
+  </body>
+
+</html>
